@@ -35,13 +35,13 @@
 \usepackage{enumerate}        % specialized enumerations
 \usepackage{multicol}         % text in multiple columns
 \usepackage{csquotes}         % citations based on the language set for babel
+\usepackage[natbibapa]{apacite}		  % w departmend citation style
 \ifgerman{
   \usepackage[ngerman]{babel}
   \usepackage{ngerman}
 	\usepackage{bibgerm}        % German symbols in BibTeX
 }{
   \usepackage[english]{babel}
-	\usepackage[numbers,sort&compress]{natbib}
 }
 
 %% Pagesize and Pageborder
