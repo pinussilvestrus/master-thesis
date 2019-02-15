@@ -35,14 +35,7 @@
 \usepackage{enumerate}        % specialized enumerations
 \usepackage{multicol}         % text in multiple columns
 \usepackage{csquotes}         % citations based on the language set for babel
-\usepackage[natbibapa]{apacite}		  % w departmend citation style
-\ifgerman{
-  \usepackage[ngerman]{babel}
-  \usepackage{ngerman}
-	\usepackage{bibgerm}        % German symbols in BibTeX
-}{
-  \usepackage[english]{babel}
-}
+
 
 %% Pagesize and Pageborder
 \usepackage{geometry}
@@ -91,28 +84,8 @@
 \@usepdftrue % switch automatically to PDF mode
 \fi
 
-\if@usepdf
- \usepackage{ae}      % erzeuge lesbare Schriften (mit cmps-Fonts)
- \usepackage[raiselinks=true,%
-             bookmarks=true,%
-             bookmarksopenlevel=2,%
-             bookmarksopen=true,%
-             bookmarksnumbered=true,%
-						 pagebackref=true,
-             hyperindex=true,%
-						 \ifprint{}{colorlinks=true,}
-						 linkcolor=pdflinkcolor,
-						 anchorcolor=pdflinkcolor,
-						 citecolor=pdfcitecolor,
-						 filecolor=pdflinkcolor,
-						 menucolor=pdflinkcolor,
-						 urlcolor=pdflinkcolor,
-             plainpages=false,
-             pdfpagelabels=true,
-						]{hyperref} % erzeuge Hyperlinks z.B. für pdflatex
-\else
-  \usepackage{nohyperref}
-\fi
+
+\usepackage{nohyperref}
 
 \newif\if@usehyperref
 \ifx\href\@undefined % Wenn kein hyperref Paket geladen
@@ -120,6 +93,16 @@
 \else
 \@usehyperreftrue % hyperref used
 \fi
+
+%% Citations
+\usepackage[apaciteclassic]{apacite}		  % w departmend citation style
+\ifgerman{
+	\usepackage[ngerman]{babel}
+	\usepackage{ngerman}
+	\usepackage{bibgerm}        % German symbols in BibTeX
+}{
+	\usepackage[english]{babel}
+}
 
 % Das float-Paket muss NACH hyperref eingebunden werden,
 % sonst klappt die PDF-Ausgabe nicht:
@@ -292,25 +275,25 @@
 
 % extends bibliography by a list of the pages where the publication is cited
 %\backrefgerman % for german theses
-\renewcommand*{\backref}[1]{
+%\renewcommand*{\backref}[1]{
 	% default interface
 	% #1: backref list
 	%
 	% We want to use the alternative interface,
 	% therefore the definition is empty here.
-}
-\renewcommand*{\backrefalt}[4]{
+%}
+%\renewcommand*{\backrefalt}[4]{
 	% alternative interface
 	% #1: number of distinct back references
 	% #2: backref list with distinct entries
 	% #3: number of back references including duplicates
 	% #4: backref list including duplicates
-	\ifgerman{
-		\footnotesize\color{gray}(zitiert auf Seite~#2)
-	}{
-		\footnotesize\color{gray}(cited on Page~#2)
-	}
-}
+%	\ifgerman{
+	%	\footnotesize\color{gray}(zitiert auf Seite~#2)
+	%}{
+	%	\footnotesize\color{gray}(cited on Page~#2)
+	%}
+%}
 
 %% Style of Index Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewenvironment{theindex}
