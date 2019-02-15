@@ -95,7 +95,7 @@
 \fi
 
 %% Citations
-\usepackage[apaciteclassic]{apacite}		  % w departmend citation style
+\usepackage[notocbib]{apacite}		  % w departmend citation style
 \ifgerman{
 	\usepackage[ngerman]{babel}
 	\usepackage{ngerman}
@@ -271,7 +271,7 @@
 
 %% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\renewcommand{\bibname}{\ifgerman{Literatur}{Bibliography}}
+\renewcommand{\bibname}{\ifgerman{Literaturverzeichnis}{Bibliography}}
 
 % extends bibliography by a list of the pages where the publication is cited
 %\backrefgerman % for german theses
