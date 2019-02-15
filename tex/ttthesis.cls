@@ -116,26 +116,26 @@
 
 %% Headings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\newcommand{\headfont}{\fontfamily{ppl}\selectfont}
+\newcommand{\headfont}{\fontfamily{ppl}\selectfont}
 %\newcommand{\headfont}{\sffamily}
-\newcommand{\headfont}{\slshape}
+%\newcommand{\headfont}{\slshape}
 \newcommand{\captionfont}{}
 \newcommand{\chapterheadfont}{}
 
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 \fancyhf{} % clear all header and footer fields
-\fancyhead[LE,RO]{{\headfont\thepage}} % left/right header for even/odd pages
-\fancyhead[LO]{\headfont\nouppercase{\rightmark}} % header for left side (odd)
-\fancyhead[RE]{\headfont\nouppercase{\leftmark}} % right header for even pages
-\renewcommand{\headrulewidth}{0.5pt} % head rule
-\renewcommand{\footrulewidth}{0pt} % no rule
+\fancyhead[C]{{\headfont\thepage}} % left/right header for even/odd pages
+%\fancyhead[R]{\headfont\nouppercase{\rightmark}} % header for left side (odd)
+%\fancyhead[RE]{\headfont\nouppercase{\leftmark}} % right header for even pages
+\renewcommand{\headrulewidth}{0pt} % head rule
+\renewcommand{\footrulewidth}{0pt} % foot rule
 % plainstyle
 \fancypagestyle{plain}{%
 	\fancyhf{} % clear all header and footer fields
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
-	%\cfoot{\headfont\thepage}
+	\chead{\headfont\thepage}
 }
 
 \renewcommand{\chaptername}{}
