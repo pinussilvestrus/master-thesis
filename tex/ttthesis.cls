@@ -104,6 +104,7 @@
 	\usepackage[english]{babel}
 }
 
+
 % Das float-Paket muss NACH hyperref eingebunden werden,
 % sonst klappt die PDF-Ausgabe nicht:
 %\usepackage{float} %z.B. \floatstyle{ruled}
