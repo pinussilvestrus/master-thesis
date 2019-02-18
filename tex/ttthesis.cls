@@ -107,7 +107,7 @@
 
 % Das float-Paket muss NACH hyperref eingebunden werden,
 % sonst klappt die PDF-Ausgabe nicht:
-%\usepackage{float} %z.B. \floatstyle{ruled}
+\usepackage{float} %z.B. \floatstyle{ruled}
 
 %% Glossaries and Acronyms
 \usepackage[nonumberlist,acronym,toc]{glossaries} % list of acronyms
