@@ -35,6 +35,20 @@
 \usepackage{enumerate}        % specialized enumerations
 \usepackage{multicol}         % text in multiple columns
 \usepackage{csquotes}         % citations based on the language set for babel
+\usepackage[subfigure]{tocloft}
+
+%% List of figures and tables
+\renewcommand{\cftfigpresnum}{Abbildung }
+\renewcommand{\cfttabpresnum}{Tabelle }
+
+\renewcommand{\cftfigaftersnum}{:}
+\renewcommand{\cfttabaftersnum}{:}
+
+\setlength{\cftfignumwidth}{3cm}
+\setlength{\cfttabnumwidth}{3cm}
+
+\setlength{\cftfigindent}{0cm}
+\setlength{\cfttabindent}{0cm}
 
 
 %% Pagesize and Pageborder
