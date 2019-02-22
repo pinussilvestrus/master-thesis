@@ -35,7 +35,8 @@
 \usepackage{enumerate}        % specialized enumerations
 \usepackage{multicol}         % text in multiple columns
 \usepackage{csquotes}         % citations based on the language set for babel
-\usepackage[subfigure]{tocloft}
+\usepackage[subfigure]{tocloft} % listoffigures additions
+\usepackage{enumitem} % itemize additions
 
 %% List of figures and tables
 \renewcommand{\cftfigpresnum}{Abbildung }
