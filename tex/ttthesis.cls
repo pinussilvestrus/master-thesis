@@ -125,10 +125,9 @@
 \usepackage{float} %z.B. \floatstyle{ruled}
 
 %% Glossaries and Acronyms
-\usepackage[nonumberlist,acronym,toc]{glossaries} % list of acronyms
-  \renewcommand*{\glspostdescription}{} % remove the dot in the list of acronyms
+\usepackage[acronym,toc]{glossaries} % list of acronyms
   \setlength{\glsdescwidth}{0.8\textwidth} % for longer acronym descriptions
-  \glossarystyle{super}
+  %\glossarystyle{super}
 
 %% Headings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
