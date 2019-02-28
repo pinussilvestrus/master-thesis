@@ -33,6 +33,20 @@
 *.alg
 *.loa
 
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
 thesis.pdf
 .DS_Store
 

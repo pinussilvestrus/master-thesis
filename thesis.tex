@@ -64,8 +64,10 @@
 %*********************************************************************%
 
 % HOWTO: \gls{IDE} for singular or \glspl{IDE} for plural with 's
-%\makeglossaries
-\newacronym{MOEW}{MOEW}{Moderne Organisationsentwicklung}
+\newglossary[ch1]{formel}{ch2}{ch3}{Abkürzungsverzeichnis}
+\makenoidxglossaries
+\loadglsentries{glossaries/glossaries}
+\glsaddall
 %\glsaddall % use only if you have acronyms that occur only in graphics
 
 %*********************************************************************%
@@ -118,9 +120,8 @@
 		
 		\newpage
 
-		%\renewcommand*{\firstacronymfont}[1]{\emph{#1}}
-		\printglossary[type=acronym,title=List of Acronyms,toctitle=Abkürzungsverzeichnis]
-		\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+		\renewcommand*{\firstacronymfont}[1]{\emph{#1}}
+		\printnoidxglossary[style=long,title=Abkürzungsverzeichnis,toctitle=Abkürzungsverzeichnis]
 	}{
 		\listoffigures
 		\addcontentsline{toc}{chapter}{List of Figures}

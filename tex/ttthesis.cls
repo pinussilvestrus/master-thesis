@@ -125,7 +125,7 @@
 \usepackage{float} %z.B. \floatstyle{ruled}
 
 %% Glossaries and Acronyms
-\usepackage[acronym,toc]{glossaries} % list of acronyms
+\usepackage[nopostdot,nonumberlist,numberedsection,toc]{glossaries} % list of acronyms
   \setlength{\glsdescwidth}{0.8\textwidth} % for longer acronym descriptions
   %\glossarystyle{super}
 
