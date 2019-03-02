@@ -37,6 +37,8 @@
 \usepackage{csquotes}         % citations based on the language set for babel
 \usepackage[subfigure]{tocloft} % listoffigures additions
 \usepackage{enumitem} % itemize additions
+\usepackage{rotating}% rotating
+\usepackage{tabularx}%dynamic tables
 
 %% List of figures and tables
 \renewcommand{\cftfigpresnum}{Abbildung }
