@@ -119,6 +119,11 @@
 	\usepackage[english]{babel}
 }
 
+\let\oldcite\cite \def\cite{\renewcommand{\BOthers}[1]{u.a.\hbox{}} \oldcite }
+\let\oldciteA\citeA \def\citeA{\renewcommand{\BOthers}[1]{u.a.} \oldciteA }
+	
+%\renewcommand{\BOthers}[1]{u.a.\hbox{}}%       et al -> u.a.
+%\renewcommand{\BOthersPeriod}[1]{u.a.\hbox{}}%  et al. -> u.a.
 
 % Das float-Paket muss NACH hyperref eingebunden werden,
 % sonst klappt die PDF-Ausgabe nicht:
