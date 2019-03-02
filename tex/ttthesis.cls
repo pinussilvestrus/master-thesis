@@ -109,6 +109,9 @@
 \@usehyperreftrue % hyperref used
 \fi
 
+% use urls
+\def\url#1{\expandafter\string\csname #1\endcsname}
+
 %% Citations
 \usepackage[notocbib]{apacite}		  % w departmend citation style
 \ifgerman{
