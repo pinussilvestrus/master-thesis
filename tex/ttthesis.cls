@@ -64,8 +64,8 @@
 \parskip1.5ex plus0.5ex minus0.5ex % Abstand zwischen zwei Absätzen
 
 %% Numbering of Sections
-\setcounter{secnumdepth}{3} % Numerierung auch für \subsubsection
-\setcounter{tocdepth}{3}    % nimm auch \subsubsections ins Inhaltsverz. auf
+\setcounter{secnumdepth}{2} % Numerierung auch für \subsubsection
+\setcounter{tocdepth}{2}    % nimm auch \subsubsections ins Inhaltsverz. auf
 
 %% Schusterjungen und Hurenkinder verhindern: siehe deutsches TeX-FAQ (6.1.3)
 \clubpenalty = 10000
