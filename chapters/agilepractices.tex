@@ -223,15 +223,56 @@ Nachfolgend kann aus Übersichtsgründen natürlich keine Beschreibung und Evalu
 % - systematisch: erst Definition der Methode, dann Evaluation im Bezug auf die Problemfelder
 % - siehe Key findings: https://docs.google.com/document/d/1QayCknP1SgspsPvXlU_FR5u0h2fNzhfQshNOrAuTiB8/edit
 
-Nachdem im vorherigen Abschnitt eine Reihe von agilen Methoden, die innerhalb von Transformationsprozessen genutzt wurden, aufgeführt worden sind, sollen diese im folgenden systematisch kurz beschrieben und evaluiert werden. Die Reihenfolge der Bearbeitung richtet sich nach der Anzahl der Nennungen (absteigend, vgl. \ref{tab:clusteringagileshort}).
+Nachdem im vorherigen Abschnitt eine Reihe von agilen Methoden, die innerhalb von Transformationsprozessen genutzt wurden, aufgeführt worden sind, sollen diese im folgenden systematisch kurz beschrieben und evaluiert werden. Die Reihenfolge der Bearbeitung richtet sich nach der Anzahl der Nennungen (absteigend, vgl. \ref{tab:clusteringagileshort}). Die einzelnen Beschreibungen sollen nicht zu sehr ins Detail erfolgen. Es soll ein generelles Verständnis für die jeweilige agile Methode geschaffen werden.
 
 \subsection{Scrum}
 
-\todots
-
 \subsubsection{Beschreibung}
 
-\todots
+\textit{Scrum}, so wie es gegenwärtig vermehrt eingesetzt wird, ist ein Framework zur Steuerung komplexer Projekte \cite[S. 25]{wirdemann_scrum_2017}, wobei es ursprünglich innerhalb von Softwareprojekten eingesetzt wurde. ``Komplexe Projekte'', so \citeA{wirdemann_scrum_2017}, ``sind
+dadurch charakterisiert, dass nicht exakt vorhersehbar ist, welchen Verlauf das Projekt nehmen wird und was in Zukunft alles passiert'' (S. 25f.). Mit Scrum wird somit versucht, ein Rahmen zu schaffen, um flexibel auf Veränderungen innerhalb eines Projektes zu reagieren. Dabei sieht man bereits einen Bezug auf die Werte der Agilität (vgl. \ref{background}).
+
+Der Scrum-Prozess selbst besteht aus einer Vielzahl an einzelnen Komponenten. Wie bereits erwähnt wurde, ist Scrum ein Framework. Dies beinhaltet, dass ein Rahmen bereitgestellt wird, in dem Entwicklungsteams ihre eigenen und bewährten Entwicklungspraktiken einbetten können \cite[S. 27]{wirdemann_scrum_2017}. Es geht somit um das Finden einer guten Mischung zwischen den Hilfsmitteln, die Scrum selbst bereitstellt und denen, die im Unternehmen bereits verankert sind. \ref{fig:scrum} soll einen generellen Überblick über Scrum und seine Komponenten bereitstellen. Im folgenden soll nicht auf alle Komponenten, sondern nur auf einzelne, wichtige eingegangen werden.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.9\linewidth]{pics/scrum}}
+	\caption[Scrum im Überblick]{Scrum im Überblick \protect \cite[S. 29]{wirdemann_scrum_2017}}
+	\label{fig:scrum}
+\end{figure}
+
+Die Übersicht lässt gut erkennen, dass man durch Scrum immer noch einen gesteuerten Prozess erhält, auch wenn versucht wird, eine gewisse  Flexibilität zu erzielen. Im Kern stehen sogenannte \textit{Sprints}. Dies sind regelmäßige Iterationen, in denen das Team selbstorganisiert arbeitet und an dessen Ende immer ein sogenanntes \textit{Increment} steht, im Falle der Softwareentwicklung eine verwendbares Produkt, was eine spürbare  Verbesserung beinhaltet \cite[S. 30]{wirdemann_scrum_2017}. Wichtig hierbei ist, dass Sprints immer eine festgelegte Länge haben. So erreicht man eine kontinuierliche Verbesserung.
+
+Am Anfang jedes  Scrum-Prozesses steht die Definition einer \textit{Vision}. Diese `` schafft die Bedeutung [des] Handelns, indem sie klar benennt, wer das Produkt aus welchem Grund kaufen wird, welche Kundenbedürfnisse das Produkt befriedigt und worin sich das Produkt von ähnlichen, bereits existierenden Produkten unterscheidet'' \cite[S. 29]{wirdemann_scrum_2017}. Sie wird also nicht nur vom Kunden vorgegeben, sondern gemeinsam mit dem Entwicklungsteam erarbeitet. Als Ergebnis entsteht ein sogenannter \textit{Product Backlog}.
+
+Ein Scrum-Prozess besteht aus einer Vielzahl möglicher Meetings. Diese dienen dazu, den Iterationen einen abgesteckten Rahmen zu geben. Ein Beispiel ist das \textit{Sprint Planning Meeting}. Hierbei wird der kommende Sprint vom Team vorbereitet. Es werden Aufgaben priorisiert, geschätzt und in kleinere Unteraufgaben geteilt. Am entsteht aus dem Product Backlog ein sogenannter \textit{Sprint Backlog}, der während der Iteration nicht verändert werden sollte \cite[S. 29]{wirdemann_scrum_2017}.
+
+Das Team steht im Fokus des Prozesses. Dieses soll sich frei entfalten kommen, ist aber auch hauptverantwortlich für den Fortschritt des Projektes. Ein Scrum-Team beinhaltet mehrere Rollen, welche in \ref{fig:scrumrollen} dargestellt werden. 
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.9\linewidth]{pics/scrumrollen}}
+	\caption[Scrum-Rollen und ihr Zusammenspiel]{Scrum-Rollen und ihr Zusammenspiel \protect \cite[S. 36]{wirdemann_scrum_2017}}
+	\label{fig:scrumrollen}
+\end{figure}
+
+Im Fokus steht das eigentliche Entwicklungsteam. Dieses arbeitet im Sprint die einzelnen Aufgaben ab und sorgt am Ende für die Entstehung eines verwendbaren Produktes. Der \textit{Scrum Master} soll das Team dabei unterstützen. Er sorgt für das nötige Umfeld, um den Prozess erfolgreich zu gestalten. Der \textit{Product Owner} präsentiert die Kundenseite im Prozess. Er vermittelt mit weiteren Stakeholdern und gibt Anforderungen vor. Im klassischen Scrum-Prozess spielt der Kunde somit nur eine Nebenrolle, die aber durch den Product Owner vertreten wird. 
+
+Ganz nach dem Wesen der Agilität folgt Scrum auch einer  Reihe von Prinzipien. Diese können von Projekt zu Projekt variieren, \citeA{wirdemann_scrum_2017} stellt eine Möglichkeit einer Gruppierung dar:
+
+\begin{itemize}[noitemsep, topsep=0pt]
+	\item Transparenz
+	\item Beobachten und Anpassen
+	\item Timeboxing
+	\item Dinge abschließen
+	\item Maximierung von Geschäftswert
+	\item Teams scheitern nicht
+	\item Ergebnisorientierung
+\end{itemize}
+
+Man erkennt hierbei sehr gut den Bezug auf die \textit{Agilität}. Beispielsweise spiegelt die Wichtigkeit der \textit{Transparenz} den agilen Wert der Offenheit wider (vgl. \ref{background:agile}). Man erkennt in den genannten Prinzipien aber auch das Streben nach Wirtschaftlichkeit und Erfolg (vgl. \textit{Maximierung von Geschäftswert, Timeboxing und Ergebnisorientierung}), wobei dem Team jedoch immer das nötige Vertrauen gegeben werden sollte (vgl. \textit{Team scheitern nicht}).
+
+Scrum hat sich vermehrt in der Produktentwicklung durchgesetzt. Dies lässt auch das vorgenommene SLR 2 erkennen (vgl. \ref{tab:clusteringslr2} und \ref{tab:clusteringslr2-2} im Anhang). Spannend ist hierbei, ob und inwieweit Scrum auch in anderen Bereichen des Unternehmens eingesetzt werden kann. Scrum bietet eine große Zahl an Vorteilen. Die nachfolgende Evaluation soll zeigen, ob diese auch im Einsatz gegen die Problemfelder der Digitalen Transformation wirken.
 
 \subsubsection{Evaluation}
 
