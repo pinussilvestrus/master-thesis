@@ -47,7 +47,7 @@
 \renewcommand{\cftfigaftersnum}{:}
 \renewcommand{\cfttabaftersnum}{:}
 
-\setlength{\cftfignumwidth}{3cm}
+\setlength{\cftfignumwidth}{3.2cm}
 \setlength{\cfttabnumwidth}{3cm}
 
 \setlength{\cftfigindent}{0cm}
