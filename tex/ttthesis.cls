@@ -1,6 +1,6 @@
 %% Class ttthesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% This template is inspired by Roland Bless %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\LoadClass[12pt,titlepage]{book}
+\LoadClass[12pt,titlepage,oneside]{book}
 
 %% Options of this Class
 \DeclareOption{draft}{\let\@draft\@empty}
@@ -124,11 +124,11 @@
 	\usepackage[english]{babel}
 }
 
-\let\oldcite\cite \def\cite{\renewcommand{\BOthers}[1]{u.a.\hbox{}} \oldcite }
-\let\oldciteA\citeA \def\citeA{\renewcommand{\BOthers}[1]{u.a.} \oldciteA }
+\let\oldcite\cite \def\cite{\renewcommand{\BOthers}[1]{u. a.\hbox{}} \oldcite }
+\let\oldciteA\citeA \def\citeA{\renewcommand{\BOthers}[1]{u. a.} \oldciteA }
 	
-%\renewcommand{\BOthers}[1]{u.a.\hbox{}}%       et al -> u.a.
-%\renewcommand{\BOthersPeriod}[1]{u.a.\hbox{}}%  et al. -> u.a.
+%\renewcommand{\BOthers}[1]{u. a.\hbox{}}%       et al -> u. a.
+%\renewcommand{\BOthersPeriod}[1]{u. a.\hbox{}}%  et al. -> u. a.
 
 % Das float-Paket muss NACH hyperref eingebunden werden,
 % sonst klappt die PDF-Ausgabe nicht:
@@ -169,7 +169,7 @@
 \@startsection{section}%
 {1}% Gliederungsebene
 {0mm}% Einzug
-{1.5ex plus 1ex minus 1.2ex}% Vorabstand
+{1ex plus 1ex minus 1.2ex}% Vorabstand
 {0.5ex plus 0.5ex minus 0.5ex}% Nachabstand
 {\chapterheadfont\Large\bfseries}% Stil
 }
@@ -178,7 +178,7 @@
 {2}%
 {0mm}%
 {1ex plus 1ex minus 1ex}%
-{0.3ex plus 0.3ex minus 0.3ex}%
+{0.2ex plus 0.2ex minus 0.2ex}%
 {\chapterheadfont\large\bfseries}%
 }
 \renewcommand{\subsubsection}{%
