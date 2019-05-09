@@ -205,7 +205,7 @@
 % \renewcommand{\@chapapp}{} allein reicht nicht!
 %% \chapter{...}
 \renewcommand{\@makechapterhead}[1]{%
-  \vspace*{0.2\textheight}%
+  %\vspace*{0.2\textheight}%
   %\hrule
   \vskip 15\p@
   {\parindent \z@ \raggedright \normalfont
@@ -229,17 +229,17 @@
     %\the\chapnolen
     %\vskip 20\p@
     %\rule{\textwidth}{1pt}
-    \vskip 40\p@
+    %\vskip 40\p@
   }}
 
 %% \chapter*{...}
 \renewcommand{\@makeschapterhead}[1]{%
-  \vspace*{50\p@}%
+  \vspace*{40\p@}%
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
     \chapterheadfont \huge \bfseries  #1\par\nobreak
-    \vskip 40\p@
+    %\vskip 40\p@
   }%
 }
 
