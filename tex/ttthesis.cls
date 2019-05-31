@@ -320,6 +320,8 @@
 	%}
 %}
 
+\setlength\bibitemsep{1.1\itemsep}
+
 %% Style of Index Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewenvironment{theindex}
 {\if@twocolumn
